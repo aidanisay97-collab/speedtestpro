@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Speed Test Pro</h1>
+        <p class="subtitle">Prueba la velocidad de tu conexión</p>
+        <div class="speed-circle">
+            <span id="speed">0</span>
+            <small>Mbps</small>
+        </div>
+        <button id="startButton">Iniciar prueba</button>
+        <div class="results">
+            <div class="result">
+                <span>📶</span>
+                <p>Ping</p>
+                <strong id="ping">-- ms</strong>
+            </div>
+            <div class="result">
+                <span>〽️</span>
+                <p>Jitter</p>
+                <strong id="jitter">-- ms</strong>
+            </div>
+            <div class="result">
+                <span>⬇️</span>
+                <p>Descarga</p>
+                <strong id="download">-- Mbps</strong>
+            </div>
+            <div class="result">
+                <span>⬆️</span>
+                <p>Subida</p>
+                <strong id="upload">-- Mbps</strong>
+            </div>
+        </div>
+        <p id="status">Listo para comenzar</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
